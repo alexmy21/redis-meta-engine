@@ -1,0 +1,24 @@
+{
+  'label': {'type': 'string', 'default': 'BOOTSTRAP'},
+  'name': {'type': 'string', 'default': 'bootstrap.py'},
+  'version': {'type': 'string', 'default': 'str'},
+  'package': {'type': 'string', 'default': 'core'},
+  'language': {'type': 'string', 'default': 'python'},
+  'schema_dir': {'type': 'string', 'default': '/home/alexmy/PYTHON/redis-meta-engine/.meta/processors'},
+  'schema': {'type': 'string', 'default': 'bootstrap'},
+
+  'kind': {'type': 'string', 'default': 'processor'},
+
+  'keys': {'type': 'list', 'required': True, 'default': ['meta_env', 'idx_reg_url']}, 
+
+  'props': {
+    'required': True,
+    'type': 'dict',
+    'schema': {
+      '__id': {'type': 'string','default': 'str'},
+      'meta_env': {'type': 'string', 'required': True, 'default': 'str'},
+      'idx_reg_dir': {'type': 'string', 'required': True, 'default': 'core_schemas'},
+      'doc': {'type': 'string', 'default': 'str'}
+    },
+  }
+}
